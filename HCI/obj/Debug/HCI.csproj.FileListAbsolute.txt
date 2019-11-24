@@ -1,0 +1,10 @@
+C:\Users\ale\source\repos\HCI\HCI\obj\Debug\HCI.csprojAssemblyReference.cache
+C:\Users\ale\source\repos\HCI\HCI\obj\Debug\HCI.FirstView.resources
+C:\Users\ale\source\repos\HCI\HCI\obj\Debug\HCI.Properties.Resources.resources
+C:\Users\ale\source\repos\HCI\HCI\obj\Debug\HCI.csproj.GenerateResource.cache
+C:\Users\ale\source\repos\HCI\HCI\bin\Debug\HCI.exe.config
+C:\Users\ale\source\repos\HCI\HCI\bin\Debug\HCI.exe
+C:\Users\ale\source\repos\HCI\HCI\bin\Debug\HCI.pdb
+C:\Users\ale\source\repos\HCI\HCI\obj\Debug\HCI.exe
+C:\Users\ale\source\repos\HCI\HCI\obj\Debug\HCI.pdb
+C:\Users\ale\source\repos\HCI\HCI\obj\Debug\HCI.GameView.resources
