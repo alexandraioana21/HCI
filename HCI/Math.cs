@@ -94,6 +94,7 @@ namespace HCI
         private void pictureBox10_Click(object sender, EventArgs e)
         {
             this.contor++;
+            Console.WriteLine(contor);
             sound(this.contor);
             pictureBox10.Hide();
         }
@@ -121,6 +122,7 @@ namespace HCI
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             this.contor++;
+            Console.WriteLine("bcdsjcbdskcbd");
             sound(this.contor);
             pictureBox4.Hide();
         }
