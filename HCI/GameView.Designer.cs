@@ -36,6 +36,8 @@
             this.brownBin = new System.Windows.Forms.PictureBox();
             this.redBin = new System.Windows.Forms.PictureBox();
             this.closeButton = new System.Windows.Forms.PictureBox();
+            this.scoreLabel = new System.Windows.Forms.Label();
+            this.gunoi = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.yellowBin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greenBin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blackBin)).BeginInit();
@@ -43,6 +45,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.brownBin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.redBin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunoi)).BeginInit();
             this.SuspendLayout();
             // 
             // yellowBin
@@ -54,6 +57,7 @@
             this.yellowBin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.yellowBin.TabIndex = 0;
             this.yellowBin.TabStop = false;
+            this.yellowBin.Click += new System.EventHandler(this.yellowBin_Click);
             // 
             // greenBin
             // 
@@ -64,6 +68,7 @@
             this.greenBin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.greenBin.TabIndex = 1;
             this.greenBin.TabStop = false;
+            this.greenBin.Click += new System.EventHandler(this.greenBin_Click);
             // 
             // blackBin
             // 
@@ -74,6 +79,7 @@
             this.blackBin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.blackBin.TabIndex = 2;
             this.blackBin.TabStop = false;
+            this.blackBin.Click += new System.EventHandler(this.blackBin_Click);
             // 
             // blueBin
             // 
@@ -84,6 +90,7 @@
             this.blueBin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.blueBin.TabIndex = 3;
             this.blueBin.TabStop = false;
+            this.blueBin.Click += new System.EventHandler(this.blueBin_Click);
             // 
             // brownBin
             // 
@@ -94,6 +101,7 @@
             this.brownBin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.brownBin.TabIndex = 5;
             this.brownBin.TabStop = false;
+            this.brownBin.Click += new System.EventHandler(this.brownBin_Click);
             // 
             // redBin
             // 
@@ -104,6 +112,7 @@
             this.redBin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.redBin.TabIndex = 6;
             this.redBin.TabStop = false;
+            this.redBin.Click += new System.EventHandler(this.redBin_Click);
             // 
             // closeButton
             // 
@@ -116,6 +125,26 @@
             this.closeButton.TabStop = false;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
+            // scoreLabel
+            // 
+            this.scoreLabel.AutoSize = true;
+            this.scoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.scoreLabel.Font = new System.Drawing.Font("Ravie", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreLabel.ForeColor = System.Drawing.Color.Red;
+            this.scoreLabel.Location = new System.Drawing.Point(572, 31);
+            this.scoreLabel.Name = "scoreLabel";
+            this.scoreLabel.Size = new System.Drawing.Size(0, 44);
+            this.scoreLabel.TabIndex = 9;
+            // 
+            // gunoi
+            // 
+            this.gunoi.BackColor = System.Drawing.Color.Transparent;
+            this.gunoi.Location = new System.Drawing.Point(938, 600);
+            this.gunoi.Name = "gunoi";
+            this.gunoi.Size = new System.Drawing.Size(160, 180);
+            this.gunoi.TabIndex = 10;
+            this.gunoi.TabStop = false;
+            // 
             // GameView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -123,6 +152,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1373, 784);
+            this.Controls.Add(this.gunoi);
+            this.Controls.Add(this.scoreLabel);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.redBin);
             this.Controls.Add(this.brownBin);
@@ -140,7 +171,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.brownBin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.redBin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunoi)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -153,5 +186,7 @@
         private System.Windows.Forms.PictureBox brownBin;
         private System.Windows.Forms.PictureBox redBin;
         private System.Windows.Forms.PictureBox closeButton;
+        private System.Windows.Forms.Label scoreLabel;
+        private System.Windows.Forms.PictureBox gunoi;
     }
 }
