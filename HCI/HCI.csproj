@@ -49,6 +49,12 @@
       <DependentUpon>GameView.cs</DependentUpon>
     </Compile>
     <Compile Include="Gunoi.cs" />
+    <Compile Include="InfoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoView.designer.cs">
+      <DependentUpon>InfoView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Math.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GameView.resx">
       <DependentUpon>GameView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoView.resx">
+      <DependentUpon>InfoView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Math.resx">
       <DependentUpon>Math.cs</DependentUpon>

@@ -14,6 +14,7 @@ namespace HCI
     {
         GameView gameView;
         Math math;
+        InfoView lingvistic;
 
         public FirstView()
         {
@@ -42,9 +43,9 @@ namespace HCI
 
         private void playLingvistic_Click(object sender, EventArgs e)
         {
-            gameView = new GameView();
+            lingvistic = new InfoView();
             this.Hide();
-            gameView.Show();
+            lingvistic.Show();
         }
     }
 }

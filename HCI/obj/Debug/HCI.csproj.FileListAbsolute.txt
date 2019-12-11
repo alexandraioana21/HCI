@@ -9,3 +9,4 @@ C:\Users\ale\source\repos\HCI\HCI\obj\Debug\HCI.exe
 C:\Users\ale\source\repos\HCI\HCI\obj\Debug\HCI.pdb
 C:\Users\ale\source\repos\HCI\HCI\obj\Debug\HCI.GameView.resources
 C:\Users\ale\source\repos\HCI\HCI\obj\Debug\HCI.Math.resources
+C:\Users\ale\source\repos\HCI\HCI\obj\Debug\HCI.InfoView.resources
