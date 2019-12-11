@@ -13,17 +13,34 @@ namespace HCI
     public partial class FirstView : Form
     {
         GameView gameView;
+        Math math;
+
         public FirstView()
         {
             InitializeComponent();
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
+
+        private void playMain_Click(object sender, EventArgs e)
+        {
+            gameView = new GameView();
+            this.Hide();
+            gameView.Show();
+        }
+
+        private void close_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void playButton_Click(object sender, EventArgs e)
+        private void playMath_Click(object sender, EventArgs e)
+        {
+            math = new Math();
+            this.Hide();
+            math.Show();
+        }
+
+        private void playLingvistic_Click(object sender, EventArgs e)
         {
             gameView = new GameView();
             this.Hide();
