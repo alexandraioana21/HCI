@@ -52,7 +52,7 @@
             // 
             this.greenBin.Image = ((System.Drawing.Image)(resources.GetObject("greenBin.Image")));
             this.greenBin.Location = new System.Drawing.Point(235, 553);
-            this.greenBin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.greenBin.Margin = new System.Windows.Forms.Padding(4);
             this.greenBin.Name = "greenBin";
             this.greenBin.Size = new System.Drawing.Size(173, 212);
             this.greenBin.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             this.blackBin.Image = ((System.Drawing.Image)(resources.GetObject("blackBin.Image")));
             this.blackBin.Location = new System.Drawing.Point(452, 558);
-            this.blackBin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.blackBin.Margin = new System.Windows.Forms.Padding(4);
             this.blackBin.Name = "blackBin";
             this.blackBin.Size = new System.Drawing.Size(165, 207);
             this.blackBin.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             this.redBin.Image = ((System.Drawing.Image)(resources.GetObject("redBin.Image")));
             this.redBin.Location = new System.Drawing.Point(893, 575);
-            this.redBin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.redBin.Margin = new System.Windows.Forms.Padding(4);
             this.redBin.Name = "redBin";
             this.redBin.Size = new System.Drawing.Size(159, 218);
             this.redBin.TabIndex = 4;
@@ -85,7 +85,7 @@
             // 
             this.blueBin.Image = ((System.Drawing.Image)(resources.GetObject("blueBin.Image")));
             this.blueBin.Location = new System.Drawing.Point(672, 561);
-            this.blueBin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.blueBin.Margin = new System.Windows.Forms.Padding(4);
             this.blueBin.Name = "blueBin";
             this.blueBin.Size = new System.Drawing.Size(171, 203);
             this.blueBin.TabIndex = 3;
@@ -115,7 +115,8 @@
             this.Controls.Add(this.blackBin);
             this.Controls.Add(this.greenBin);
             this.Controls.Add(this.yellowBin);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "InfoView";
             this.Text = "InfoView";
             this.ResumeLayout(false);
