@@ -128,7 +128,7 @@ namespace HCI
                     gunoi.ImageLocation=@randomList[0].image;
                 }
                 else
-                    Console.WriteLine("E gata jocul");
+                    gunoi.Hide();
             }
             else playerAww.Play();
         }
@@ -147,7 +147,7 @@ namespace HCI
                 }
                 else
                 {
-                    Console.WriteLine("E gata jocul");
+                    gunoi.Hide();
                 }
             }
             else playerAww.Play();
@@ -167,9 +167,8 @@ namespace HCI
                 }
                 else
                 {
-                    SoundPlayer player = new SoundPlayer(@"C:\Users\ale\source\repos\HCI\yay.wav");
-                    player.Play();
-                    Console.WriteLine("E gata jocul");
+                    
+                    gunoi.Hide();
                 }
             }
             else playerAww.Play();
@@ -188,7 +187,7 @@ namespace HCI
                     gunoi.ImageLocation = @randomList[0].image;
                 }
                 else
-                    Console.WriteLine("E gata jocul");
+                    gunoi.Hide();
             }
             else playerAww.Play();
         }
@@ -206,7 +205,7 @@ namespace HCI
                     gunoi.ImageLocation = @randomList[0].image;
                 }
                 else
-                    Console.WriteLine("E gata jocul");
+                    gunoi.Hide();
             }
             else playerAww.Play();
         }
@@ -224,7 +223,7 @@ namespace HCI
                     gunoi.ImageLocation = @randomList[0].image;
                 }
                 else
-                    Console.WriteLine("E gata jocul");
+                    gunoi.Hide();
             }
             else playerAww.Play();
         }

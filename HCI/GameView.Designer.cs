@@ -141,7 +141,7 @@
             this.gunoi.BackColor = System.Drawing.Color.Transparent;
             this.gunoi.Location = new System.Drawing.Point(938, 600);
             this.gunoi.Name = "gunoi";
-            this.gunoi.Size = new System.Drawing.Size(160, 180);
+            this.gunoi.Size = new System.Drawing.Size(212, 180);
             this.gunoi.TabIndex = 10;
             this.gunoi.TabStop = false;
             // 
