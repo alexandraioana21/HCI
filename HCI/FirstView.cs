@@ -13,7 +13,7 @@ namespace HCI
     public partial class FirstView : Form
     {
         GameView gameView;
-        Math math;
+        Adunare math;
         InfoView lingvistic;
 
         public FirstView()
@@ -36,7 +36,7 @@ namespace HCI
 
         private void playMath_Click(object sender, EventArgs e)
         {
-            math = new Math();
+            math = new Adunare();
             this.Hide();
             math.Show();
         }

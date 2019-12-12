@@ -36,6 +36,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adunare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adunare.Designer.cs">
+      <DependentUpon>Adunare.cs</DependentUpon>
+    </Compile>
     <Compile Include="FirstView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,12 +61,6 @@
     <Compile Include="InfoView.designer.cs">
       <DependentUpon>InfoView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Math.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Math.Designer.cs">
-      <DependentUpon>Math.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -76,6 +76,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Adunare.resx">
+      <DependentUpon>Adunare.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FirstView.resx">
       <DependentUpon>FirstView.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,9 +87,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InfoView.resx">
       <DependentUpon>InfoView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Math.resx">
-      <DependentUpon>Math.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
