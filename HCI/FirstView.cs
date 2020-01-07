@@ -12,8 +12,7 @@ namespace HCI
 {
     public partial class FirstView : Form
     {
-        GameView gameView;
-        Adunare math;
+        
         InfoView lingvistic;
 
         public FirstView()
@@ -24,9 +23,9 @@ namespace HCI
 
         private void playMain_Click(object sender, EventArgs e)
         {
-            gameView = new GameView();
+            lingvistic = new InfoView();
             this.Hide();
-            gameView.Show();
+            lingvistic.Show();
         }
 
         private void close_Click(object sender, EventArgs e)
@@ -34,18 +33,8 @@ namespace HCI
             this.Close();
         }
 
-        private void playMath_Click(object sender, EventArgs e)
-        {
-            math = new Adunare();
-            this.Hide();
-            math.Show();
-        }
+        
 
-        private void playLingvistic_Click(object sender, EventArgs e)
-        {
-            lingvistic = new InfoView();
-            this.Hide();
-            lingvistic.Show();
-        }
+        
     }
 }

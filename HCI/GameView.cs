@@ -19,6 +19,7 @@ namespace HCI
         int scor = 0;
         SoundPlayer playerYay;
         SoundPlayer playerAww;
+        Adunare math;
 
 
         public GameView()
@@ -107,6 +108,8 @@ namespace HCI
                 listGunoaie.RemoveAt(randomIndex);
             }
 
+                  
+
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -125,10 +128,16 @@ namespace HCI
                 randomList.Remove(randomList[0]);
                 if (randomList.Count > 0)
                 {
-                    gunoi.ImageLocation=@randomList[0].image;
+                    gunoi.ImageLocation = @randomList[0].image;
                 }
                 else
+                {
                     gunoi.Hide();
+                    math = new Adunare();
+                    this.Hide();
+                    math.Show();
+                
+            }
             }
             else playerAww.Play();
         }
@@ -147,7 +156,11 @@ namespace HCI
                 }
                 else
                 {
+
                     gunoi.Hide();
+                    math = new Adunare();
+                    this.Hide();
+                    math.Show();
                 }
             }
             else playerAww.Play();
@@ -169,6 +182,9 @@ namespace HCI
                 {
                     
                     gunoi.Hide();
+                    math = new Adunare();
+                    this.Hide();
+                    math.Show();
                 }
             }
             else playerAww.Play();
@@ -187,8 +203,13 @@ namespace HCI
                     gunoi.ImageLocation = @randomList[0].image;
                 }
                 else
+                {
                     gunoi.Hide();
-            }
+                    math = new Adunare();
+                    this.Hide();
+                    math.Show();
+                }
+                }
             else playerAww.Play();
         }
 
@@ -205,8 +226,13 @@ namespace HCI
                     gunoi.ImageLocation = @randomList[0].image;
                 }
                 else
+                {
                     gunoi.Hide();
-            }
+                    math = new Adunare();
+                    this.Hide();
+                    math.Show();
+                }
+                }
             else playerAww.Play();
         }
 
@@ -223,8 +249,13 @@ namespace HCI
                     gunoi.ImageLocation = @randomList[0].image;
                 }
                 else
+                {
                     gunoi.Hide();
-            }
+                    math = new Adunare();
+                    this.Hide();
+                    math.Show();
+                }
+                }
             else playerAww.Play();
         }
 
