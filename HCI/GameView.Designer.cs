@@ -38,6 +38,8 @@
             this.closeButton = new System.Windows.Forms.PictureBox();
             this.scoreLabel = new System.Windows.Forms.Label();
             this.gunoi = new System.Windows.Forms.PictureBox();
+            this.stea = new System.Windows.Forms.PictureBox();
+            this.punctaj = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.yellowBin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greenBin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blackBin)).BeginInit();
@@ -46,6 +48,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.redBin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunoi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stea)).BeginInit();
             this.SuspendLayout();
             // 
             // yellowBin
@@ -139,19 +142,40 @@
             // gunoi
             // 
             this.gunoi.BackColor = System.Drawing.Color.Transparent;
-            this.gunoi.Location = new System.Drawing.Point(938, 600);
+            this.gunoi.Location = new System.Drawing.Point(862, 549);
             this.gunoi.Name = "gunoi";
-            this.gunoi.Size = new System.Drawing.Size(212, 180);
+            this.gunoi.Size = new System.Drawing.Size(330, 231);
             this.gunoi.TabIndex = 10;
             this.gunoi.TabStop = false;
+            // 
+            // stea
+            // 
+            this.stea.Image = ((System.Drawing.Image)(resources.GetObject("stea.Image")));
+            this.stea.Location = new System.Drawing.Point(945, 590);
+            this.stea.Name = "stea";
+            this.stea.Size = new System.Drawing.Size(183, 172);
+            this.stea.TabIndex = 11;
+            this.stea.TabStop = false;
+            // 
+            // punctaj
+            // 
+            this.punctaj.BackColor = System.Drawing.Color.Transparent;
+            this.punctaj.Location = new System.Drawing.Point(832, 590);
+            this.punctaj.Name = "punctaj";
+            this.punctaj.Size = new System.Drawing.Size(116, 172);
+            this.punctaj.TabIndex = 12;
+            this.punctaj.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // GameView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1373, 784);
+            this.ClientSize = new System.Drawing.Size(1551, 784);
+            this.Controls.Add(this.punctaj);
+            this.Controls.Add(this.stea);
             this.Controls.Add(this.gunoi);
             this.Controls.Add(this.scoreLabel);
             this.Controls.Add(this.closeButton);
@@ -172,6 +196,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.redBin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunoi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stea)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +213,7 @@
         private System.Windows.Forms.PictureBox closeButton;
         private System.Windows.Forms.Label scoreLabel;
         private System.Windows.Forms.PictureBox gunoi;
+        private System.Windows.Forms.PictureBox stea;
+        private System.Windows.Forms.Label punctaj;
     }
 }

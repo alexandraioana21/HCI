@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Media;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,7 +22,7 @@ namespace HCI
         SoundPlayer playerAlbastru;
         SoundPlayer playerRosu;
         SoundPlayer playerPortocaliu;
-        GameView gameView;
+        Adunare mathView;
         bool checkGalben;
         bool checkVerde;
         bool checkNegru;
@@ -37,23 +39,41 @@ namespace HCI
             checkRosu=false;
             checkPortocaliu=false;
 
-            playerGalben = new SoundPlayer(@"C:\Users\ale\source\repos\HCI\galben.wav");
-             playerVerde = new SoundPlayer(@"C:\Users\ale\source\repos\HCI\verde.wav");
-            playerNegru = new SoundPlayer(@"C:\Users\ale\source\repos\HCI\negru.wav");
-            playerAlbastru = new SoundPlayer(@"C:\Users\ale\source\repos\HCI\albastru.wav");
-            playerRosu = new SoundPlayer(@"C:\Users\ale\source\repos\HCI\rosu.wav");
-            playerPortocaliu = new SoundPlayer(@"C:\Users\ale\source\repos\HCI\portocaliu.wav");
+            string x = (Assembly.GetEntryAssembly().Location + "");
+            x = x.Replace("HCI.exe", "galben.wav");
+            playerGalben = new SoundPlayer(x);
+
+            x = (Assembly.GetEntryAssembly().Location + "");
+            x = x.Replace("HCI.exe", "verde.wav");
+            playerVerde = new SoundPlayer(x);
+
+            x = (Assembly.GetEntryAssembly().Location + "");
+            x = x.Replace("HCI.exe", "negru.wav");
+            playerNegru = new SoundPlayer(x);
+
+            x = (Assembly.GetEntryAssembly().Location + "");
+            x = x.Replace("HCI.exe", "albastru.wav");
+            playerAlbastru = new SoundPlayer(x);
+
+            x = (Assembly.GetEntryAssembly().Location + "");
+            x = x.Replace("HCI.exe", "rosu.wav");
+            playerRosu = new SoundPlayer(x);
+
+            x = (Assembly.GetEntryAssembly().Location + "");
+            x = x.Replace("HCI.exe", "portocaliu.wav");
+            playerPortocaliu = new SoundPlayer(x);
 
             InitializeComponent();
         }
 
-        public void stop()
+        public async void stop()
         {
             if (this.checkAlbastru &&this.checkGalben&& this.checkNegru &&this.checkPortocaliu &&this.checkRosu&&this.checkVerde)
             {
-                gameView = new GameView();
+                await Task.Delay(5000);
+                mathView = new Adunare();
                 this.Hide();
-                gameView.Show();
+                mathView.Show();
             }
         }
 
@@ -97,8 +117,6 @@ namespace HCI
             this.checkPortocaliu=true;
             playerPortocaliu.Play();
             stop();
-        }
-
-        
+        }        
     }
 }
